@@ -19,7 +19,6 @@ int main(void)
 			{
 				for (k = 0 ; k <= 9 ; ++k)
 				{
-					if ( > j)
 					for (l = 0 ; l <= 9 ; ++l)
 					{
 						if (l != 0)
