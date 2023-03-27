@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * swap_int - Entry point 
+ * swap_int - Entry point
  * Description: 'the progream swaps the value of integer a for b'
  * @a: Integer to swap
  * @b: Integer to swap
