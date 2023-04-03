@@ -15,12 +15,11 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		if (s[i + 1] == ' ')
 			break;
-		else
-			for (l = 0; accept[l] != '\0'; l++)
-			{
-				if (s[i] == accept[l])
-					j++;
-			}	
+		for (l = 0; accept[l] != '\0'; l++)
+		{
+			if (s[i] == accept[l])
+				j++;
+		}
 	}
 	return (j);
 }
