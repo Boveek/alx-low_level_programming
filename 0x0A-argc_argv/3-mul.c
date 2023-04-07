@@ -5,7 +5,7 @@
  * main - Entry point
  * @argv: argument vector
  * @argc: argument count
- * Return: On success 0
+ * Return: On success 0 and 1 on error
  */
 int main(int argc, char *argv[])
 {
@@ -17,6 +17,9 @@ int main(int argc, char *argv[])
 		printf("%d\n", result);
 	}
 	else
+	{
 		printf("Error\n");
+		return (1);
+	}
 	return (0);
 }
