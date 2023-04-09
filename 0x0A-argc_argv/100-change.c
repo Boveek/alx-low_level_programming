@@ -57,7 +57,6 @@ int main(int argc, char *argv[])
 		{
 			i = atoi(argv[1]) % checkdiv(atoi(argv[1]));
 			k++;
-			printf("%d\n", k);
 			k += divide(i, checkdiv(i));
 			printf("%d\n", k);
 		}
