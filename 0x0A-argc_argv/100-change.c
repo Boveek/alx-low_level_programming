@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int checkdiv(int num);
-int divide(int num1, int num2);
+int divide(int num1);
 /**
  * checkdiv - Function that check for a number can divide the inputed number
  * @num: int input
@@ -25,19 +25,19 @@ int checkdiv(int num)
 /**
  * divide - Function that returns the number of times an integer can be divided
  * @num1: Integer input
- * @num2: Integer input
  * Return: An integer
  */
-int divide(int num1, int num2)
+int divide(int num1)
 {
 	int p = 0;
+	int n;
 
-	while (num1 >= num2)
+	while (num1 > 0)
 	{
-		num1 -= num2;
-		p++;
+		n = num1 / (checkdiv(num1));
+		num1 -= checkdiv(num1) * n;
+		p += n;
 	}
-	p++;
 	return (p);
 }
 /**
@@ -49,15 +49,12 @@ int divide(int num1, int num2)
 int main(int argc, char *argv[])
 {
 	int k = 0;
-	int i;
 
 	if (argc == 2)
 	{
 		if (atoi(argv[1]) >= 0)
 		{
-			i = atoi(argv[1]) % checkdiv(atoi(argv[1]));
-			k++;
-			k += divide(i, checkdiv(i));
+			k += divide(atoi(argv[1]));
 			printf("%d\n", k);
 		}
 		else
