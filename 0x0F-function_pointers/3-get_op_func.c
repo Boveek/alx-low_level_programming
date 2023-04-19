@@ -2,10 +2,9 @@
 #include <stdlib.h>
 /**
  * get_op_func - Selects the right fuction to be used to perform the arithmeti
- * @s: The operator passed as argument.
- *
+ * @s: The operator passed as argument
  * Return: A pointer to the function corresponding
- *         to the operator given as a parameter.
+ * to the operator given as a parameter.
  */
 
 int (*get_op_func(char *s))(int, int)
