@@ -13,8 +13,8 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 
 	va_list a;
-	va_start(a, format);
 
+	va_start(a, format);
 	if (format)
 	{
 		i = 0;
