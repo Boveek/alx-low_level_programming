@@ -21,7 +21,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			if (!(separator == NULL))
 				printf("%d%s", va_arg(a, int), separator);
 			else
-				printf("%d\n", va_arg(a, int));
+				printf("%d", va_arg(a, int));
 		}
 		else
 			printf("%d\n", va_arg(a, int));
