@@ -24,12 +24,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	ptr->len = count;
 	ptr->next = NULL;
 	if (*head == NULL)
-	*head = ptr;
-	return (ptr);
+	{
+		*head = ptr;
+		return (ptr);
+	}
 	while (swap->next)
 	{
 		swap = swap->next;
-		swap->next = ptr;
 	}
+	swap->next = ptr;
 	return (ptr);
 }
