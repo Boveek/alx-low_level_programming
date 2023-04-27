@@ -9,7 +9,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	int i = 0;
 	int count = 0;
-	list_t swap = (*head);
+	list_t *swap = *head;
 	list_t *ptr;
 
 	while (str[i] != '\0')
@@ -32,3 +32,4 @@ list_t *add_node_end(list_t **head, const char *str)
 		swap->next = ptr;
 	}
 	return (ptr);
+}
