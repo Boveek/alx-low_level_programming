@@ -24,7 +24,7 @@ int create_file(const char *filename, char *text_content)
 		num++;
 		i++;
 	}
-	count = write(fd, text_content, num);
+	count = write(fd, text_content, num + 1);
 	if (count == -1)
 		return (-1);
 	close(fd);
