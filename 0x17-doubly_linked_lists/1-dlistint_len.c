@@ -23,4 +23,4 @@ size_t dlistint_len(const dlistint_t *h)
 		temp = temp->next;
 	}
 	return (num);
-}		
+}
