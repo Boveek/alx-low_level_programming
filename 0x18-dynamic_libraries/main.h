@@ -1,7 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <stdlib.h>
 
+int sub(int i, int j);
+int add(int i, int j);
+int div(int i, int j);
+int mul(int i, int j);
+int mod(int i, int j);
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
