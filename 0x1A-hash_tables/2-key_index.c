@@ -1,7 +1,8 @@
 #include "hash_tables.h"
 /**
- * hash_djb2 - function implementing the djb2 algorithm
- * @str: string input
+ * key_index - function implementing the djb2 algorithm
+ * @key: key input
+ * @size: size of the array
  * Return: hash index
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
